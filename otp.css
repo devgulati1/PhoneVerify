@@ -1,0 +1,83 @@
+
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.popup-container{
+  position: fixed;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  
+
+   
+    
+}
+.popup-container.show{
+    opacity: 1;
+    pointer-events: all;
+}
+.popup{
+    background-color: whitesmoke;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    border: 3px;
+    border-radius: 5px;
+   box-shadow:  10px 5px 5px black;
+  
+    
+}
+
+#click-me-btn{
+    background-color: aqua;
+    color: black;
+    border: 2px;
+    border-radius: 5px ;
+    font-size: 15px;
+    padding: 10px 20px ;
+
+}
+#click-me-btn:hover{
+    cursor: pointer;
+}
+
+.otp-input{
+    
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    height: 30px;
+    width: 30px;
+}
+.popup-change-resend{
+    display: flex;
+    justify-content: space-around;
+}
+.verify-otp-btn{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 2px black;
+    margin: 4px;
+}
+.verify-otp-btn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
